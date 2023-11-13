@@ -108,9 +108,6 @@ input::placeholder {
     /* display: none; */
 }
 
-.wrapper{
-
-}
 
 small{
     display: none;
@@ -176,9 +173,6 @@ small{
         text-align: right;
     }
 
-    {
-        text-align: justify;
-    }
 
     .form--entails input{
         width: 500px;
