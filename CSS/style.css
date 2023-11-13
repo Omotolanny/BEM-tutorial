@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700;800&family=Josefin+Sans:ital,wght@0,300;0,400;1,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-content: center;
+    font-size: 16px;
+    font-family: josefin-sans, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.wrapper--logo{
+    display: none;
+}
+
+.logo{
+    padding: 1.5rem 0 0 1.5rem;
+}
+
+.wrapper--image img{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+article h1{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: hsl(0, 6%, 24%);
+}
+
+article h1 span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+article h1:first-child {
+    text-align: center;
+    padding: 0 1.5rem 2rem;
+}
+
+article p {
+   color: hsl(0, 36%, 70%);
+   line-height: 1.6;
+}
+
+.form--entails input {
+    padding: 0.8rem 1rem;
+    border: 1px solid hsl(0, 6%, 24%);
+    border-radius: 30px;
+    width: 100%;
+    margin: 2rem 0 0;
+    color: hsl(0, 6%, 24%);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+form{
+    position: relative;
+}
+
+.form--entails label{
+    position: absolute;
+    top: 40%;
+    transform: translate(32%);
+    right: 5.5rem;
+    /* display: none; */
+}
+
+form button {
+    position: absolute;
+    top: 60%;
+    right: -1rem;
+    transform: translateY(-36.5%);
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+form button:hover{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+}
+
+input::placeholder {
+    color: hsl(0, 6%, 24%);
+}
+
+.form--entails-error{
+    color: hsl(0, 93%, 68%);
+    margin-top: 0.5rem;
+    /* display: none; */
+}
+
+.wrapper{
+
+}
+
+small{
+    display: none;
+}
+
+.form--entails-error{
+    display: none;
+}
+
+
+
+/* .wrapper--image{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+} */
+
+/* .wrapper--content{
+      justify-content: center;
+      padding: 80px;
+} */
+
+@media (min-width: 768px) {
+    body{
+        background: url('/images/bg-pattern-desktop.svg') no-repeat center/cover;
+    }
+
+    .wrapper{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper article{
+        flex: 1;
+    }
+    
+    .wrapper--logo{
+        text-align: left;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh; */
+    }
+
+    .wrapper--image img{
+        width: 100%;
+        margin-top: -4rem;
+    }
+
+    .wrapper--logo{
+        display: none;
+    }
+
+    .logo{
+        display: block;
+    }
+
+    article h1{
+        font-size: 4rem;
+        width: 500px ;
+        text-align: right;
+    }
+
+    {
+        text-align: justify;
+    }
+
+    .form--entails input{
+        width: 500px;
+    }
+
+    form button {
+        right: 220px;
+    }
+
+    .form--entails label{
+        right: 310px;
+    }
+}
